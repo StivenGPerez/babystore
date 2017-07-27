@@ -39,8 +39,8 @@
 												<th><label for="">Estado:</label></th>
 												<td>
 														<select id="carta_estado" class="chosen-select">
-															<option value="-1" selected>Seleccione Estado </option>
-															<option value="A">VIGENTE</option>
+															<option value="-1">Seleccione Estado </option>
+															<option value="A" selected>VIGENTE</option>
 															<option value="I">VENCIDO</option>																												
 														</select>								
 												</td>	

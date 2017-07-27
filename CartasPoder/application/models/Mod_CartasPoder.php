@@ -28,7 +28,7 @@ class Mod_CartasPoder extends CI_Model
                                        WHERE NC.NIT = CL.NIT
                                        AND NVL(CL.ESTADO_CLIENTE,'A') = 'A'
                                        AND NC.NIT <> 830023857
-                                       AND NC.RAZON_SOCIAL LIKE UPPER('%$carta_cliente%')
+                                       AND (NC.RAZON_SOCIAL LIKE UPPER('%$carta_cliente%') OR NC.NIT LIKE UPPER('%$carta_cliente%'))
                                        GROUP BY NC.NIT, NC.RAZON_SOCIAL ORDER BY NC.RAZON_SOCIAL");
       return $sql_cliente->result();   
     }
